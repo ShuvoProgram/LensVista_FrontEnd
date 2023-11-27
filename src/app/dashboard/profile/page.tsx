@@ -138,8 +138,6 @@ const page = () => {
       setUploadLoader(false);
     } catch (error) {
       setUploadLoader(false);
-      console.log(error);
-      // toast.error("Fail To update Profile Picture");
     }
   };
 

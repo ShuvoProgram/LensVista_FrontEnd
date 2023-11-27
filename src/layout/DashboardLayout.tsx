@@ -10,9 +10,6 @@ const DashboardLayout = ({ children }: any) => {
     (state) => state.auth
   );
 
-  console.log(user);
-  console.log(isLoading);
-
   const router = useRouter();
 
   React.useEffect(() => {

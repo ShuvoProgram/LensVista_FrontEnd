@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import logo from "../../../assets/icons/logo.png";
+// import logo from "../../../assets/icons/logo.png";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -75,11 +75,11 @@ export default () => {
             href="/"
             className="flex items-center"
           >
-            <Image
+            {/* <Image
               src={logo}
               width={30}
               alt="brand logo"
-            />
+            /> */}
             <p
               className={`font-semibold text-2xl ml-1  text-transparent bg-clip-text bg-gradient-to-r from-[#13a0ef] to-[#c7ec01]`}
             >

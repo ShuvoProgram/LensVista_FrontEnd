@@ -88,7 +88,6 @@ const page = () => {
   };
 
   const handleDelete = async (id: any) => {
-    // console.log(id);
     const response = await deleteFaq(id);
     const { data: responseData, error } = response;
 

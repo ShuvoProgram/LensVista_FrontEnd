@@ -44,7 +44,7 @@ const page = () => {
   const { toast } = useToast();
 
   const handleCancelBooking = async (bookingId: any) => {
-    console.log(bookingId);
+
 
     const response = await cancelBooking(bookingId);
     const { data: responseData, error } = response;
@@ -61,7 +61,6 @@ const page = () => {
     }
   };
 
-  // console.log();
 
   const handleAddReview = async (e: any) => {
     e.preventDefault();

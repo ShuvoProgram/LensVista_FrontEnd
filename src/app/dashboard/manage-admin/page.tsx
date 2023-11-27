@@ -66,7 +66,6 @@ const page = () => {
   const [updateData] = useUpdateProfileMutation();
 
   const handleDeleteUser = async (userId: string) => {
-    console.log(userId);
     const id = parseInt(userId);
 
     swal({
@@ -139,7 +138,6 @@ const page = () => {
   }
 
   const handleMakeAdmin = async (email: string) => {
-    console.log(email);
     const data = {
       email: email,
       role: {

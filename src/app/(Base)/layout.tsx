@@ -2,9 +2,9 @@ import "../../app/globals.css";
 import type { Metadata } from "next";
 import BaseComponent from "@/components/base/BaseComponent";
 export const metadata: Metadata = {
-  title: "Snap-Saga",
+  title: "LensVista",
   description:
-    "SnapSaga is where every image becomes a story. We capture life's precious moments with creativity and passion, transforming them into timeless visual narratives. Experience the art of storytelling through our lens.",
+    "LensVista captures moments with finesse! 📸 Offering professional photography services for events, portraits, and special occasions. 🌟 Let us frame your memories beautifully. ",
   icons: "/logo.png",
 };
 

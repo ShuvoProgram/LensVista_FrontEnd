@@ -39,7 +39,6 @@ const page = () => {
   const { user, isLoading, token } = useAppSelector(
     (state) => state.auth
   );
-  console.log(user);
   const [currentPage, setCurrentPage] = React.useState(1);
   const [totalPage, setTotalPage] = React.useState();
 
@@ -49,19 +48,10 @@ const page = () => {
   const [phone, setPhone] = useState<any>();
   const [address, setAddress] = useState();
   const { data } = useGetAllUserQuery(currentPage);
-  console.log(data);
   const router = useRouter();
   React.useEffect(() => {
-    // if (isLoading === false) {
-    //   if (
-    //     user?.role !== "admin" ||
-    //     user?.role !== "super_admin"
-    //   ) {
-    //     router.push("/");
-    //   }
-    // }
+  
     if (data) {
-      console.log(data);
       setCurrentPage(data?.meta?.page);
       setTotalPage(data?.meta?.total);
     }
@@ -73,7 +63,6 @@ const page = () => {
   const [updateData] = useUpdateProfileMutation();
 
   const handleDeleteUser = async (userId: string) => {
-    console.log(userId);
     const id = parseInt(userId);
 
     swal({
@@ -132,7 +121,6 @@ const page = () => {
   };
 
   const handleMakeAdmin = async (email: string) => {
-    console.log(email);
     const data = {
       email: email,
       role: {
