@@ -1,19 +1,11 @@
 "use client";
-import Loader from "@/components/Loader/Loader";
-import FilterSection from "@/components/filter/FilterSection/FilterSection";
 import ServiceCard from "@/components/ui/ServiceCard/ServiceCard";
-import { useGetServiceQuery } from "@/redux/feature/service/serviceApi";
 import React, { useEffect, useState } from "react";
 import { category as options } from "@/constants/categories";
 import { Filter } from "lucide-react";
 import {
   Sheet,
-  SheetClose,
   SheetContent,
-  SheetDescription,
-  SheetFooter,
-  SheetHeader,
-  SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
 
