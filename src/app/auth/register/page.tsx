@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useRegisterUserMutation } from "@/redux/feature/user/userApi";
 import { Router } from "next/router";
-import Loader from "@/components/Loader/Loader";
+import Loader from "@/components/loader";
 import { useRouter } from "next/navigation";
 import { useToast } from "@/components/ui/use-toast";
 import { ToastAction } from "@/components/ui/toast";

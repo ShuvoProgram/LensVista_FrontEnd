@@ -5,7 +5,7 @@ import logo from "../../../assets/icons/logo.png";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useLoginUserMutation } from "@/redux/feature/user/userApi";
-import Loader from "@/components/Loader/Loader";
+import Loader from "@/components/loader";
 import { useAppDispatch } from "@/redux/hooks";
 import {
   useRouter,

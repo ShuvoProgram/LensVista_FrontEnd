@@ -1,5 +1,5 @@
 "use client";
-import Loader from "@/components/Loader/Loader";
+import Loader from "@/components/loader";
 import { Button } from "@/components/ui/button";
 import { ToastAction } from "@/components/ui/toast";
 import { useToast } from "@/components/ui/use-toast";
