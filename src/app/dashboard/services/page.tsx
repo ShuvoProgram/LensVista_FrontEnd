@@ -144,7 +144,6 @@ const page = () => {
   };
 
   const handleDelete = async (serviceId: any) => {
-    console.log(serviceId);
 
     swal({
       title:

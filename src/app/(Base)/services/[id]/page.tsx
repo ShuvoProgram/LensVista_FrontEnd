@@ -14,7 +14,6 @@ const page = ({ params }: any) => {
   const { id } = params;
 
   const { data } = useGetReviewQuery(id);
-  console.log(data);
 
   useEffect(() => {
     setIsLoading(true);

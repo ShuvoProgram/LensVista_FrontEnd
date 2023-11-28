@@ -1,9 +1,5 @@
 "use client";
 import { authKey } from "@/constants/storageKey";
-import {
-  IGenericErrorResponse,
-  ResponseSuccessType,
-} from "@/types";
 import axios from "axios";
 import { getFromLocalStorage } from "../localStorage/localStorage";
 
@@ -20,7 +16,6 @@ instance.interceptors.request.use(
   function (config) {
     // Do something before request is sent
     const accessToken = getFromLocalStorage(authKey);
-    console.log(accessToken);
     if (accessToken) {
       config.headers.Authorization = accessToken;
     }
@@ -32,27 +27,5 @@ instance.interceptors.request.use(
   }
 );
 
-// Add a response interceptor
-//@ts-ignore
-// instance.interceptors.response.use(
-//   function (response) {
-//     const responseObject: ResponseSuccessType = {
-//       data: response?.data?.data,
-//       meta: response?.data?.meta,
-//     };
-//     return responseObject;
-//   },
-//   function (error) {
-//     const responseObject: IGenericErrorResponse = {
-//       statusCode: error?.response?.data?.statusCode || 500,
-//       message:
-//         error?.response?.data?.message ||
-//         "Something went wrong",
-//       errorMessages: error?.response?.data?.message,
-//     };
-//     return responseObject;
-//     // return Promise.reject(error);
-//   }
-// );
 
 export { instance };

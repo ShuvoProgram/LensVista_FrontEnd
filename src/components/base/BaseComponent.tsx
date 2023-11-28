@@ -9,7 +9,7 @@ export default async function BaseComponent({
   children,
   showNavbar = true,
   showFooter = true,
-  className = "w-[95%] mx-auto",
+  className = "w-full mx-auto",
 }: {
   children: React.ReactNode;
   showNavbar?: boolean;

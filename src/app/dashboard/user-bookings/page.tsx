@@ -23,7 +23,6 @@ const page = () => {
   const [totalPage, setTotalPage] = React.useState();
   const { data: bookings } =
     useGetAllBookingsQuery(currentPage);
-  //   console.log(data);
 
   const { toast } = useToast();
 
