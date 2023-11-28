@@ -62,14 +62,14 @@ export default () => {
 
   return (
     <nav
-      className={` pb-2 md:text-sm ${
+      className={`md:text-sm ${
         state
           ? "shadow-lg rounded-xl border mx-2 mt-2 md:shadow-none md:border-none md:mx-2 md:mt-0"
           : ""
       }`}
     >
       <div className="gap-x-14 items-center  mx-auto px-4 md:flex md:px-8">
-        <div className="flex items-center justify-between py-5 md:block">
+        <div className="flex items-center justify-between md:block">
           <Link
             href="/"
             className="flex items-center"
@@ -344,7 +344,7 @@ export default () => {
                 </Link>
                 <Link
                   href="/auth/registration"
-                  className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-semibold bg-gradient-to-r from-[#13a0ef] to-[#c7ec01] rounded-full md:inline-flex"
+                  className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-semibold bg-gradient-to-r from-[#13a0ef] to-[#e1eef1] rounded-full md:inline-flex"
                 >
                   Sign up
                   <svg

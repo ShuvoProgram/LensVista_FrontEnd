@@ -54,7 +54,7 @@ const Testimonials = () => {
         <div className="w-full bg-white  border-gray-200 px-5 py-16  text-gray-800">
           <div className="w-full max-w-6xl mx-auto">
             <div className="text-center max-w-2xl mx-auto">
-              <h1 className="text-6xl md:text-5xl font-bold mb-5  text-transparent my-5 p-3 bg-clip-text bg-gradient-to-r to-[#c7ec01] from-[#13a0ef] via-[#13a0ef]">
+              <h1 className="text-6xl md:text-5xl font-bold mb-5  text-transparent my-5 p-3 bg-clip-text bg-gradient-to-r from-[#13a0ef] to-[#e1eef1] via-[#13a0ef]">
                 What people <br />
                 are saying.
               </h1>
