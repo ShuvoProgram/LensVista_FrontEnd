@@ -337,13 +337,13 @@ export default () => {
             {!user ? (
               <>
                 <Link
-                  href="/auth/login"
+                  href="/auth/registration"
                   className="block font-semibold"
                 >
                   Log in
                 </Link>
                 <Link
-                  href="/auth/register"
+                  href="/auth/registration"
                   className="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-semibold bg-gradient-to-r from-[#13a0ef] to-[#c7ec01] rounded-full md:inline-flex"
                 >
                   Sign up
