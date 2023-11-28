@@ -3,9 +3,9 @@ import "../globals.css";
 import type { Metadata } from "next";
 import DashboardLayout from "@/layout/DashboardLayout";
 export const metadata: Metadata = {
-  title: "Dashboard | Snap-Saga",
+  title: "Dashboard | LensVista",
   description: "LensVista Dashboard",
-  icons: "/logo.png",
+  icons: "https://i.ibb.co/tpx8wRt/Screenshot-2023-11-28-010559-modified-removebg-preview.png",
 };
 
 export default function RootLayout({
