@@ -40,22 +40,20 @@ const Footer = () => {
           href="/"
           className="flex items-center justify-center"
         >
-          {/* <Image
-            src={logo}
+          <Image
+            src={`https://i.ibb.co/tpx8wRt/Screenshot-2023-11-28-010559-modified-removebg-preview.png`}
             width={30}
+            height={30}
             alt="brand logo"
-          /> */}
+          />
           <p
-            className={`font-semibold text-2xl ml-1  text-transparent bg-clip-text bg-gradient-to-r from-[#13a0ef] to-[#c7ec01]`}
+            className={`font-semibold text-2xl ml-1 text-transparent bg-clip-text bg-gradient-to-r from-[#13a0ef] to-[#e1eef1]`}
           >
-            napSaga
+            LensVista
           </p>
         </Link>
         <p className="leading-relaxed mt-2 text-[15px]">
-          Lorem Ipsum has been the industry's standard dummy
-          text ever since the 1500s, when an unknown printer
-          took a galley of type and scrambled it to make a
-          type specimen book.
+          LensVista captures moments with finesse! 📸 Offering professional photography services for events, portraits, and special occasions. 🌟 Let us frame your memories beautifully.
         </p>
       </div>
       <ul className="items-center justify-center mt-8 space-y-5 sm:flex sm:space-x-4 sm:space-y-0">

@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "Authentication",
   description:
     "LensVista is where every image becomes a story. We capture life's precious moments with creativity and passion, transforming them into timeless visual narratives. Experience the art of storytelling through our lens.",
-  icons: "/logo.png",
+  icons: "https://i.ibb.co/tpx8wRt/Screenshot-2023-11-28-010559-modified-removebg-preview.png",
 };
 
 export default function RootLayout({
