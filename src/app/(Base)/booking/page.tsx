@@ -9,7 +9,7 @@ import { Button } from "@/components/ui/button";
 import { useToast } from "@/components/ui/use-toast";
 import { useCreateBookingMutation } from "@/redux/feature/booking/bookingApi";
 import { ToastAction } from "@radix-ui/react-toast";
-import Loader from "@/components/Loader/Loader";
+import Loader from "@/components/loader";
 import OrderSuccess from "@/components/BookingSuccessMessage/BookingSuccessMessage";
 import { removeFromCart } from "@/redux/feature/cart/cart";
 

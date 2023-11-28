@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
+  namedGroups: ["btn3b"],
   content: [
     './pages/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
@@ -16,6 +17,12 @@ module.exports = {
       },
     },
     extend: {
+      maxHeight: {
+        '550px': '550px',
+      },
+      zIndex: { 
+        '-1': '-1', 
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

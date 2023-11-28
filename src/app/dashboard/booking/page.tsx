@@ -30,7 +30,7 @@ import "@smastrom/react-rating/style.css";
 import { Textarea } from "@/components/ui/textarea";
 import { useAppSelector } from "@/redux/hooks";
 import { useCreateReviewMutation } from "@/redux/feature/review/reviewApi";
-import Loader from "@/components/Loader/Loader";
+import Loader from "@/components/loader";
 
 const page = () => {
   const [rating, setRating] = useState(0);

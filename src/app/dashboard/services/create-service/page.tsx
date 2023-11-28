@@ -10,7 +10,6 @@ import {
   SelectItem,
   SelectLabel,
   SelectTrigger,
-  SelectValue,
 } from "@/components/ui/select";
 import { category } from "@/constants/categories";
 import { Textarea } from "@/components/ui/textarea";
@@ -18,7 +17,7 @@ import { Button } from "@/components/ui/button";
 import { useCreateServiceMutation } from "@/redux/feature/service/serviceApi";
 import { useToast } from "@/components/ui/use-toast";
 import { ToastAction } from "@/components/ui/toast";
-import Loader from "@/components/Loader/Loader";
+import Loader from "../../../../components/loader";
 const page = () => {
   const [image, setImage] = useState<any>([]);
   const [serviceData, setServiceData] = useState<any>({
@@ -254,23 +253,6 @@ const page = () => {
                       </SelectGroup>
                     </SelectContent>
                   </Select>
-
-                  {/* <select
-                    className="w-full"
-                    value={
-                      serviceData.availability
-                        ? "available"
-                        : "not_available"
-                    }
-                    onChange={handleAvailabilityChange}
-                  >
-                    <option value="available">
-                      Available
-                    </option>
-                    <option value="not_available">
-                      Not available
-                    </option>
-                  </select> */}
                 </div>
                 <div className="col-span-12 md:col-span-4">
                   <Label className="text-base">
