@@ -1,7 +1,6 @@
 "use client"
 import Link from 'next/link'
 import React from 'react'
-import Typed from 'react-typed';
 
 function HeroSection() {
   return (
@@ -15,15 +14,15 @@ function HeroSection() {
         
         {/* ::Hero title & text */}
         <div className="mx-5 md:mx-0 p-8 rounded-xl md:rounded-r-none bg-gray-800 bg-opacity-50 text-white shadow-2xl">
+          <div className="text-4xl text-left font-bold uppercase flex flex-col justify-around">
           <h1 className="text-3xl sm:text-5xl font-josefin font-extrabold">Photography Capturing</h1>
-          <Typed
-            strings={['moments', 'emotions']}
-            className='text-3xl sm:text-5xl font-josefin font-extrabold text-yellow-400 text-opacity-80'
-            typeSpeed={60}
-            backSpeed={30}
-            loop
-          />
-          <p className="mt-3 text-gray-100 font-firacode">and stories through the lens of creativity and vision.</p>
+      <div className="overflow-hidden h-14">
+        <div className="animate-slide"><span className="inline-block text-white py-1 px-3 mt-1 mb-11 bg-blue-500">Emotions</span></div>
+        <div><span className="inline-block text-white py-1 px-3 mb-11 bg-green-500">Moments</span></div>
+        <div><span className="inline-block text-white py-1 px-3 mb-11 bg-red-500">Happiness</span></div>
+      </div>
+    </div>
+          <p className="mt-3 text-2xl text-gray-100 font-firacode">and stories through the lens of creativity and vision.</p>
         </div>
 
         {/* ::Hero button */}
