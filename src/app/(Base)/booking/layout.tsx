@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 // export const metadata: Metadata = {
 //   title: "Booking | Snap-Saga",
 //   description:
-//     "SnapSaga is where every image becomes a story. We capture life's precious moments with creativity and passion, transforming them into timeless visual narratives. Experience the art of storytelling through our lens.",
+//     "LensVista is where every image becomes a story. We capture life's precious moments with creativity and passion, transforming them into timeless visual narratives. Experience the art of storytelling through our lens.",
 //   icons: "/logo.png",
 // };
 

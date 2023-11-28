@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   title: "LensVista",
   description:
     "LensVista captures moments with finesse! 📸 Offering professional photography services for events, portraits, and special occasions. 🌟 Let us frame your memories beautifully. ",
-  icons: "/logo.png",
+  icons: "https://i.ibb.co/tpx8wRt/Screenshot-2023-11-28-010559-modified-removebg-preview.png",
 };
 
 export default function RootLayout({

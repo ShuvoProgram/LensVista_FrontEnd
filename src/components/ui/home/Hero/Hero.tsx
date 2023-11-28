@@ -14,7 +14,7 @@ const Hero = () => {
             <h2 className="text-5xl space-y-5 text-gray-800 font-extrabold mx-auto md:text-5xl">
               <span>
                 {" "}
-                SnapSaga is where every image becomes a
+                LensVista is where every image becomes a
                 story.{" "}
               </span>
               <br />

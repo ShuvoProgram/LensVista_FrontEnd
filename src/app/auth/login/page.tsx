@@ -87,11 +87,11 @@ const page = () => {
             </Link>
             <div className=" mt-16 space-y-3">
               <h3 className="text-white text-3xl font-bold">
-                SnapSaga is where every image becomes a
+                LensVista is where every image becomes a
                 story.
               </h3>
               <p className="text-gray-300">
-                SnapSaga is where every image becomes a
+                LensVista is where every image becomes a
                 story. We capture life's precious moments
                 with creativity and passion, transforming
                 them into timeless visual narratives.

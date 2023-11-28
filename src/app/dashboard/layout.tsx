@@ -4,7 +4,7 @@ import type { Metadata } from "next";
 import DashboardLayout from "@/layout/DashboardLayout";
 export const metadata: Metadata = {
   title: "Dashboard | Snap-Saga",
-  description: "SnapSaga Dashboard",
+  description: "LensVista Dashboard",
   icons: "/logo.png",
 };
 
