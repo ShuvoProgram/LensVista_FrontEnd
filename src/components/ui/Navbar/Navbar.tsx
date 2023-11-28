@@ -62,7 +62,7 @@ export default () => {
 
   return (
     <nav
-      className={` pb-5 md:text-sm ${
+      className={` pb-2 md:text-sm ${
         state
           ? "shadow-lg rounded-xl border mx-2 mt-2 md:shadow-none md:border-none md:mx-2 md:mt-0"
           : ""

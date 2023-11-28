@@ -1,4 +1,3 @@
-import Hero from "@/components/ui/home/Hero/Hero";
 import React from "react";
 import ServiceSection from "@/components/ui/home/ServiceSection/ServiceSection";
 import CategorySection from "@/components/ui/home/CategorySection/CategorySection";
@@ -9,7 +8,6 @@ import HeroSection from "@/components/ui/home/HeroSection/HeroSection";
 const Home = () => {
   return (
     <div>
-      {/* <Hero /> */}
       <HeroSection/>
       <ServiceSection />
       <CategorySection />
