@@ -157,11 +157,11 @@
 
 *::-webkit-scrollbar-thumb {
   border-radius: 10px;
-  background-color: #227aff;
+  background-color: #67a0f6;
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background-color: #227aff;
+  background-color: #5f9bf6;
 }
 
 *::-webkit-scrollbar-thumb:active {
