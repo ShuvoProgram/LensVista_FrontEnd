@@ -1,20 +1,63 @@
+"use client";
 import React from "react";
+import Slider, { Settings } from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Testimonials = () => {
+
+  const reviewSettings: Settings = {
+    dots: false,
+    infinite: true,
+    centerPadding: "60px",
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    speed: 1000,
+    autoplay: true,
+    swipeToSlide: true,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1324,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div>
       <div className="min-w-screen min-h-screen  flex items-center justify-center py-5">
         <div className="w-full bg-white  border-gray-200 px-5 py-16  text-gray-800">
           <div className="w-full max-w-6xl mx-auto">
             <div className="text-center max-w-2xl mx-auto">
-              <h1 className="text-6xl md:text-7xl font-bold mb-5  text-transparent my-5 p-3 bg-clip-text bg-gradient-to-r to-[#c7ec01] from-[#13a0ef] via-[#13a0ef]">
+              <h1 className="text-6xl md:text-5xl font-bold mb-5  text-transparent my-5 p-3 bg-clip-text bg-gradient-to-r to-[#c7ec01] from-[#13a0ef] via-[#13a0ef]">
                 What people <br />
                 are saying.
               </h1>
-              <h3 className="text-xl mb-5 font-light">
-                Lorem ipsum dolor sit amet consectetur
-                adipisicing elit.
-              </h3>
               <div className="text-center mb-10">
                 <span className="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
                 <span className="inline-block w-3 h-1 rounded-full bg-indigo-500 ml-1"></span>
@@ -23,195 +66,101 @@ const Testimonials = () => {
                 <span className="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
               </div>
             </div>
-            <div className="-mx-3 md:flex items-start">
-              <div className="px-3 md:w-1/3">
-                <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
-                  <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img
-                        src="https://i.pravatar.cc/100?img=1"
-                        alt=""
-                      />
-                    </div>
-                    <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
-                        Kenzie Edgar.
-                      </h6>
-                    </div>
-                  </div>
-                  <div className="w-full">
-                    <p className="text-sm leading-tight">
-                      <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
-                        "
-                      </span>
-                      Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Quos sunt ratione
-                      dolor exercitationem minima quas
-                      itaque saepe quasi architecto vel!
-                      Accusantium, vero sint recusandae cum
-                      tempora nemo commodi soluta deleniti.
-                      <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
-                        "
-                      </span>
-                    </p>
-                  </div>
+            <div className="container">
+            <Slider {...reviewSettings}>
+          <div className=''>
+          <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10 w-[90%] font-serif">
+            <svg aria-hidden="true" width="105" height="78" className="absolute top-6 left-6 fill-slate-100">
+                <path
+                    d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                </path>
+            </svg>
+            <blockquote className="relative">
+                <p className="text-lg tracking-tight text-slate-900">
+                    Awesome idea. Cant wait to see how this turns out!
+                </p>
+            </blockquote>
+            <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                <div>
+                    <div className="font-display text-base text-slate-900">Exmaple name</div>
+                    <div className="mt-1 text-sm text-slate-500">Job designation</div>
                 </div>
-                <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
-                  <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img
-                        src="https://i.pravatar.cc/100?img=2"
-                        alt=""
-                      />
-                    </div>
-                    <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
-                        Stevie Tifft.
-                      </h6>
-                    </div>
-                  </div>
-                  <div className="w-full">
-                    <p className="text-sm leading-tight">
-                      <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
-                        "
-                      </span>
-                      Lorem ipsum, dolor sit amet,
-                      consectetur adipisicing elit. Dolore
-                      quod necessitatibus, labore sapiente,
-                      est, dignissimos ullam error ipsam
-                      sint quam tempora vel.
-                      <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
-                        "
-                      </span>
-                    </p>
-                  </div>
+                <div className="overflow-hidden rounded-full bg-slate-50">
+                    <img alt="" src="https://i.pravatar.cc/300" className="h-14 w-14 object-cover" loading="lazy" width="56" height="56" />
                 </div>
-              </div>
-              <div className="px-3 md:w-1/3">
-                <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
-                  <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img
-                        src="https://i.pravatar.cc/100?img=3"
-                        alt=""
-                      />
-                    </div>
-                    <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
-                        Tommie Ewart.
-                      </h6>
-                    </div>
-                  </div>
-                  <div className="w-full">
-                    <p className="text-sm leading-tight">
-                      <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
-                        "
-                      </span>
-                      Lorem ipsum dolor sit amet,
-                      consectetur adipisicing elit. Vitae,
-                      obcaecati ullam excepturi dicta error
-                      deleniti sequi.
-                      <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
-                        "
-                      </span>
-                    </p>
-                  </div>
+            </figcaption>
+        </figure>
+          </div>
+          <div className=''>
+          <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10 w-[90%] font-serif">
+            <svg aria-hidden="true" width="105" height="78" className="absolute top-6 left-6 fill-slate-100">
+                <path
+                    d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                </path>
+            </svg>
+            <blockquote className="relative">
+                <p className="text-lg tracking-tight text-slate-900">
+                    Awesome idea. Cant wait to see how this turns out!
+                </p>
+            </blockquote>
+            <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                <div>
+                    <div className="font-display text-base text-slate-900">Exmaple name</div>
+                    <div className="mt-1 text-sm text-slate-500">Job designation</div>
                 </div>
-                <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
-                  <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img
-                        src="https://i.pravatar.cc/100?img=4"
-                        alt=""
-                      />
-                    </div>
-                    <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
-                        Charlie Howse.
-                      </h6>
-                    </div>
-                  </div>
-                  <div className="w-full">
-                    <p className="text-sm leading-tight">
-                      <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
-                        "
-                      </span>
-                      Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Architecto inventore
-                      voluptatum nostrum atque, corrupti,
-                      vitae esse id accusamus dignissimos
-                      neque reprehenderit natus, hic sequi
-                      itaque dicta nisi voluptatem! Culpa,
-                      iusto.
-                      <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
-                        "
-                      </span>
-                    </p>
-                  </div>
+                <div className="overflow-hidden rounded-full bg-slate-50">
+                    <img alt="" src="https://i.pravatar.cc/300" className="h-14 w-14 object-cover" loading="lazy" width="56" height="56" />
                 </div>
-              </div>
-              <div className="px-3 md:w-1/3">
-                <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
-                  <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img
-                        src="https://i.pravatar.cc/100?img=5"
-                        alt=""
-                      />
-                    </div>
-                    <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
-                        Nevada Herbertson.
-                      </h6>
-                    </div>
-                  </div>
-                  <div className="w-full">
-                    <p className="text-sm leading-tight">
-                      <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
-                        "
-                      </span>
-                      Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Nobis, voluptatem
-                      porro obcaecati dicta, quibusdam sunt
-                      ipsum, laboriosam nostrum facere
-                      exercitationem pariatur deserunt
-                      tempora molestiae assumenda nesciunt
-                      alias eius? Illo, autem!
-                      <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
-                        "
-                      </span>
-                    </p>
-                  </div>
+            </figcaption>
+        </figure>
+          </div>
+          <div className=''>
+          <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10 w-[90%] font-serif">
+            <svg aria-hidden="true" width="105" height="78" className="absolute top-6 left-6 fill-slate-100">
+                <path
+                    d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                </path>
+            </svg>
+            <blockquote className="relative">
+                <p className="text-lg tracking-tight text-slate-900">
+                    Awesome idea. Cant wait to see how this turns out!
+                </p>
+            </blockquote>
+            <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                <div>
+                    <div className="font-display text-base text-slate-900">Exmaple name</div>
+                    <div className="mt-1 text-sm text-slate-500">Job designation</div>
                 </div>
-                <div className="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
-                  <div className="w-full flex mb-4 items-center">
-                    <div className="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
-                      <img
-                        src="https://i.pravatar.cc/100?img=6"
-                        alt=""
-                      />
-                    </div>
-                    <div className="flex-grow pl-3">
-                      <h6 className="font-bold text-sm uppercase text-gray-600">
-                        Kris Stanton.
-                      </h6>
-                    </div>
-                  </div>
-                  <div className="w-full">
-                    <p className="text-sm leading-tight">
-                      <span className="text-lg leading-none italic font-bold text-gray-400 mr-1">
-                        "
-                      </span>
-                      Lorem ipsum dolor sit amet consectetur
-                      adipisicing elit. Voluptatem iusto,
-                      explicabo, cupiditate quas totam!
-                      <span className="text-lg leading-none italic font-bold text-gray-400 ml-1">
-                        "
-                      </span>
-                    </p>
-                  </div>
+                <div className="overflow-hidden rounded-full bg-slate-50">
+                    <img alt="" src="https://i.pravatar.cc/300" className="h-14 w-14 object-cover" loading="lazy" width="56" height="56" />
                 </div>
-              </div>
+            </figcaption>
+        </figure>
+          </div>
+          <div className=''>
+          <figure className="relative rounded-2xl bg-white p-6 shadow-xl shadow-slate-900/10 w-[90%] font-serif">
+            <svg aria-hidden="true" width="105" height="78" className="absolute top-6 left-6 fill-slate-100">
+                <path
+                    d="M25.086 77.292c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622C1.054 58.534 0 53.411 0 47.686c0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C28.325 3.917 33.599 1.507 39.324 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Zm54.24 0c-4.821 0-9.115-1.205-12.882-3.616-3.767-2.561-6.78-6.102-9.04-10.622-2.11-4.52-3.164-9.643-3.164-15.368 0-5.273.904-10.396 2.712-15.368 1.959-4.972 4.746-9.567 8.362-13.786a59.042 59.042 0 0 1 12.43-11.3C82.565 3.917 87.839 1.507 93.564 0l11.074 13.786c-6.479 2.561-11.677 5.951-15.594 10.17-3.767 4.219-5.65 7.835-5.65 10.848 0 1.356.377 2.863 1.13 4.52.904 1.507 2.637 3.089 5.198 4.746 3.767 2.41 6.328 4.972 7.684 7.684 1.507 2.561 2.26 5.5 2.26 8.814 0 5.123-1.959 9.19-5.876 12.204-3.767 3.013-8.588 4.52-14.464 4.52Z">
+                </path>
+            </svg>
+            <blockquote className="relative">
+                <p className="text-lg tracking-tight text-slate-900">
+                    Awesome idea. Cant wait to see how this turns out!
+                </p>
+            </blockquote>
+            <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
+                <div>
+                    <div className="font-display text-base text-slate-900">Exmaple name</div>
+                    <div className="mt-1 text-sm text-slate-500">Job designation</div>
+                </div>
+                <div className="overflow-hidden rounded-full bg-slate-50">
+                    <img alt="" src="https://i.pravatar.cc/300" className="h-14 w-14 object-cover" loading="lazy" width="56" height="56" />
+                </div>
+            </figcaption>
+        </figure>
+          </div>
+        </Slider>
             </div>
           </div>
         </div>
