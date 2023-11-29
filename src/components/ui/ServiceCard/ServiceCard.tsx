@@ -3,7 +3,6 @@ import moment from "moment";
 import Link from "next/link";
 import React from "react";
 import { Button } from "../button";
-import { Star } from "lucide-react";
 import { useAppDispatch } from "@/redux/hooks";
 import { addToCart } from "@/redux/feature/cart/cart";
 import { useToast } from "../use-toast";

@@ -1,7 +1,7 @@
 "use client";
 import ServiceCard from "@/components/ui/ServiceCard/ServiceCard";
 import React, { useEffect, useState } from "react";
-import { category as options } from "@/constants/categories";
+import { categories as options } from "@/constants/categories";
 import { Filter } from "lucide-react";
 import {
   Sheet,
