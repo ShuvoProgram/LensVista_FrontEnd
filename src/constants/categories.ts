@@ -1,4 +1,4 @@
-export const category = [
+export const categories = [
   "Event Photography",
   "Sports Photography",
   "Real Estate Photography",

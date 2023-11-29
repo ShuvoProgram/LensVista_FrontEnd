@@ -20,6 +20,9 @@ import { contentType } from "@/constants/categories";
 
 function page() {
     const [image, setImage] = useState<any>([]);
+    const [title, setTitle] = useState("");
+    const [content, setContent] = useState("");
+    const [contentTypes, setContentTypes] = useState("");
     const [serviceData, setServiceData] = useState<any>({
         title: "",
         content: "",
@@ -43,9 +46,9 @@ function page() {
         e.preventDefault();
     
         if (
-          serviceData.title === "" ||
-          serviceData.content === "" ||
-          serviceData.contentType === ""
+            title === "" ||
+          content === "" ||
+          contentTypes === ""
         ) {
           // Show a toast message for validation error
           toast({
@@ -60,37 +63,37 @@ function page() {
         image.forEach((image: any) => {
           Form.append("banner", image);
         });
-        Form.append("title", serviceData.title);
-        Form.append("price", serviceData.content);
-        Form.append("category", serviceData.contentType);
-    
-        const response = await createNews(Form);
-        const { data: responseData, error } = response;
-        if (responseData?.statusCode === 200) {
-          toast({
-            title: responseData?.message,
-          });
-        } else {
-          toast({
-            variant: "destructive",
-            duration: 2500,
-            title: error?.data?.message,
-            action: (
-              <ToastAction
-                altText="Try again"
-              >
-                Try again
-              </ToastAction>
-            ),
-          });
-        }
+        Form.append("title", title);
+        Form.append("content", content);
+        Form.append("contentType", contentTypes);
+        // console.log(serviceData);
+        console.log(Form)
+        // const response = await createNews(Form);
+        // const { data: responseData, error } = response;
+        // if (responseData?.statusCode === 200) {
+        //   toast({
+        //     title: responseData?.message,
+        //   });
+        // } else {
+        //   toast({
+        //     variant: "destructive",
+        //     duration: 2500,
+        //     title: error?.data?.message,
+        //     action: (
+        //       <ToastAction
+        //         altText="Try again"
+        //       >
+        //         Try again
+        //       </ToastAction>
+        //     ),
+        //   });
+        // }
       };
-
 
   return (
     <div>
       <h2 className="text-center font-semibold text-xl">
-        create service
+        create news
       </h2>
 
       <div className=" mt-5">
@@ -107,16 +110,11 @@ function page() {
                     </span>
                   </Label>
                   <Input
-                    value={serviceData?.title}
-                    onChange={(e) =>
-                      setServiceData((prev: any) => {
-                        return {
-                          ...prev,
-                          title: e.target.value,
-                        };
-                      })
+                    value={title}
+                    onChange={(e: any) =>
+                      setTitle(e.target.value)
                     }
-                    placeholder="Service Title"
+                    placeholder="News Title"
                     type="text"
                     name="title"
                   />
@@ -149,14 +147,9 @@ function page() {
                   </Label>
 
                   <Select
-                    value={serviceData?.contentType}
+                    value={contentTypes}
                     onValueChange={(e) =>
-                      setServiceData((prev: any) => {
-                        return {
-                          ...prev,
-                          contentType: e,
-                        };
-                      })
+                      setContentTypes(e)
                     }
                   >
                     <SelectTrigger className="w-full">
@@ -185,15 +178,10 @@ function page() {
                 <span className=" text-red-500"> *</span>
               </Label>
               <Textarea
-                value={serviceData?.content}
-                onChange={(e) =>
-                  setServiceData((prev: any) => {
-                    return {
-                      ...prev,
-                      content: e.target.value,
-                    };
-                  })
-                }
+                value={content}
+                  onChange={(e: any) =>
+                    setContent(e.target.value)
+                  }
                 placeholder="News Content"
               />
             </div>
