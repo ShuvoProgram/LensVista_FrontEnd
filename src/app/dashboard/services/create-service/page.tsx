@@ -11,13 +11,14 @@ import {
   SelectLabel,
   SelectTrigger,
 } from "@/components/ui/select";
-import { category } from "@/constants/categories";
+import { categories } from "@/constants/categories";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { useCreateServiceMutation } from "@/redux/feature/service/serviceApi";
 import { useToast } from "@/components/ui/use-toast";
 import { ToastAction } from "@/components/ui/toast";
 import Loader from "../../../../components/loader";
+
 const page = () => {
   const [image, setImage] = useState<any>([]);
   const [serviceData, setServiceData] = useState<any>({
@@ -25,9 +26,16 @@ const page = () => {
     price: null,
     category: "",
     availability: "",
-    rating: "",
     description: "",
   });
+
+  const {
+    title,
+    price,
+    category,
+    availability,
+    description,
+  } = serviceData;
 
   const handleImageChange = (e: any) => {
     e.preventDefault();
@@ -47,11 +55,7 @@ const page = () => {
     e.preventDefault();
 
     if (
-      serviceData.title === "" ||
-      serviceData.price === null ||
-      serviceData.category === "" ||
-      serviceData.availability === "" ||
-      serviceData.description === ""
+      !title || price === null || !category || !availability || !description
     ) {
       // Show a toast message for validation error
       toast({
@@ -66,14 +70,22 @@ const page = () => {
     image.forEach((image: any) => {
       Form.append("banner", image);
     });
-    Form.append("title", serviceData.title);
-    Form.append("price", serviceData.price);
-    Form.append("category", serviceData.category);
-    Form.append("availability", serviceData.availability);
-    Form.append("rating", serviceData.rating);
-    Form.append("description", serviceData.description);
-
-    const response = await createProduct(Form);
+    // Form.append("title", title);
+    // Form.append("price", price);
+    // Form.append("category", category);
+    // Form.append("availability", availability);
+    // Form.append("description", description);
+    console.log(Form)
+    const data = {
+     title,
+       price,
+      category,
+      availability,
+       description
+    }
+    
+    console.log(data)
+    const response = await createProduct(data);
     const { data: responseData, error } = response;
     if (responseData?.statusCode === 200) {
       toast({
@@ -124,7 +136,7 @@ const page = () => {
                     </span>
                   </Label>
                   <Input
-                    value={serviceData?.title}
+                    value={title}
                     onChange={(e) =>
                       setServiceData((prev: any) => {
                         return {
@@ -150,7 +162,7 @@ const page = () => {
                     placeholder="Service price"
                     type="number"
                     name="price"
-                    value={serviceData?.price}
+                    value={price}
                     onChange={(e) =>
                       setServiceData((prev: any) => {
                         return {
@@ -188,7 +200,7 @@ const page = () => {
                   </Label>
 
                   <Select
-                    value={serviceData?.category}
+                    value={category}
                     onValueChange={(e) =>
                       setServiceData((prev: any) => {
                         return {
@@ -204,7 +216,7 @@ const page = () => {
                     <SelectContent>
                       <SelectGroup>
                         <SelectLabel placeholder="Select category" />
-                        {category?.map((e) => (
+                        {categories?.map((e) => (
                           <SelectItem
                             value={e}
                             key={e}
@@ -226,7 +238,7 @@ const page = () => {
                   </Label>
                   <Select
                     value={
-                      serviceData?.availability
+                      availability
                         ? "available"
                         : "not_available"
                     }
@@ -239,7 +251,7 @@ const page = () => {
                       <SelectGroup>
                         <SelectLabel
                           placeholder={`${
-                            serviceData?.availability
+                            availability
                               ? "available"
                               : "not_available"
                           }`}
@@ -254,24 +266,6 @@ const page = () => {
                     </SelectContent>
                   </Select>
                 </div>
-                <div className="col-span-12 md:col-span-4">
-                  <Label className="text-base">
-                    Ratings
-                  </Label>
-                  <Input
-                    value={serviceData?.rating}
-                    onChange={(e) =>
-                      setServiceData((prev: any) => {
-                        return {
-                          ...prev,
-                          rating: e.target.value,
-                        };
-                      })
-                    }
-                    placeholder="Default Ratings"
-                    type="number"
-                  />
-                </div>
               </div>
             </div>
             <div className="col-span-12 w-full  space-y-2 mt-5">
@@ -280,7 +274,7 @@ const page = () => {
                 <span className=" text-red-500"> *</span>
               </Label>
               <Textarea
-                value={serviceData?.description}
+                value={description}
                 onChange={(e) =>
                   setServiceData((prev: any) => {
                     return {
