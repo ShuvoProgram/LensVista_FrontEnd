@@ -6,3 +6,10 @@ export const category = [
   "Fashion Photography",
   "Wedding Photography",
 ];
+
+
+export const contentType = [
+  "Fashion",
+  "Travel",
+  "Lifestyle",
+]
