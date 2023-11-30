@@ -280,14 +280,14 @@
 		<g>
 			<g>
 				<g id="character-2--inject-1_2_">
-					<polygon style="fill:#C6FF00;stroke:#263238;stroke-linecap:round;stroke-linejoin:round;" points="110.74,212.632 
+					<polygon style="fill:#C6FF00;stroke:#263238;strokeLinecap:round;stroke-linejoin:round;" points="110.74,212.632 
 						126.133,427.035 286.66,408.344 241.58,203.836 					"/>
-					<polygon style="fill:#C6FF00;stroke:#263238;stroke-linecap:round;stroke-linejoin:round;" points="110.74,212.632 
+					<polygon style="fill:#C6FF00;stroke:#263238;strokeLinecap:round;stroke-linejoin:round;" points="110.74,212.632 
 						87.65,416.04 126.133,427.035 					"/>
 				</g>
 				<polygon style="opacity:0.1;" points="126.133,427.035 110.74,212.632 87.65,416.04 				"/>
 			</g>
-			<path style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="M155.921,223.969
+			<path style="fill:none;stroke:#263238;strokeLinecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="M155.921,223.969
 				c0,0,9.097,38.814,34.508,42.535c25.412,3.721,32.865-51.385,32.865-51.385"/>
 			<circle style="fill:#263238;" cx="155.921" cy="222.998" r="4.812"/>
 		</g>
@@ -296,10 +296,10 @@
 <g id="Phone">
 	<g>
 		<g id="Device--inject-1_1_">
-			<path style="fill:#263238;stroke:#263238;stroke-linecap:round;stroke-linejoin:round;" d="M258.862,128.071h141.906
+			<path style="fill:#263238;stroke:#263238;strokeLinecap:round;stroke-linejoin:round;" d="M258.862,128.071h141.906
 				c5.42,0,9.813,4.393,9.813,9.813v271.484c0,5.42-4.393,9.813-9.813,9.813H258.862c-5.42,0-9.813-4.393-9.813-9.813V137.885
 				C249.049,132.465,253.443,128.071,258.862,128.071z"/>
-			<path style="fill:#FFFFFF;stroke:#263238;stroke-linecap:round;stroke-linejoin:round;" d="M251.375,128.071h141.906
+			<path style="fill:#FFFFFF;stroke:#263238;strokeLinecap:round;stroke-linejoin:round;" d="M251.375,128.071h141.906
 				c5.42,0,9.813,4.393,9.813,9.813v271.484c0,5.42-4.394,9.813-9.813,9.813H251.375c-5.42,0-9.813-4.393-9.813-9.813V137.885
 				C241.562,132.465,245.955,128.071,251.375,128.071z"/>
 			<path style="fill:#263238;" d="M333.486,145.459H313.38c-1.14,0-2.065-0.924-2.065-2.064l0,0l0,0
@@ -316,7 +316,7 @@
 					<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
 				</clipPath>
 			</g>
-			<path style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round;" d="M392.874,393.158H251.768V145.706h33.437
+			<path style="fill:none;stroke:#263238;strokeLinecap:round;stroke-linejoin:round;" d="M392.874,393.158H251.768V145.706h33.437
 				l3.751,3.111c1.318,1.088,2.973,1.684,4.681,1.686h59.024c1.777,0.005,3.494-0.642,4.827-1.817l3.402-2.908h31.984V393.158z"/>
 			<path style="fill:#263238;" d="M326.828,400.791c0-1.774-1.439-3.213-3.213-3.213c-1.775,0-3.213,1.438-3.213,3.213
 				c0,1.774,1.439,3.213,3.213,3.213c0.005,0,0.01,0,0.015,0c1.766,0,3.198-1.432,3.198-3.198
@@ -330,7 +330,7 @@
 </g>
 <g id="Message">
 	<g>
-		<path style="fill:#FFFFFF;stroke:#263238;stroke-linecap:round;stroke-linejoin:round;" d="M412.104,314.051H222.758
+		<path style="fill:#FFFFFF;stroke:#263238;strokeLinecap:round;stroke-linejoin:round;" d="M412.104,314.051H222.758
 			c-4.668,0-8.452-3.784-8.452-8.452V199.471c0-4.668,3.784-8.452,8.452-8.452h189.346c4.668,0,8.452,3.784,8.452,8.452v106.127
 			C420.557,310.267,416.772,314.051,412.104,314.051z"/>
 		
@@ -352,7 +352,7 @@
 				<g>
 					
 						<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -119.2087 263.1975)" style="fill:#FFFFFF;stroke:#263238;stroke-miterlimit:10;" cx="258.103" cy="275.496" rx="9.956" ry="9.956"/>
-					<polyline style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round;" points="253.501,274.353 
+					<polyline style="fill:none;stroke:#263238;strokeLinecap:round;stroke-linejoin:round;" points="253.501,274.353 
 						257.331,279.717 264.229,270.904 					"/>
 				</g>
 			</g>
@@ -363,14 +363,14 @@
 	<g>
 		<g>
 			<g id="character-2--inject-1_3_">
-				<polygon style="fill:#C6FF00;stroke:#263238;stroke-linecap:round;stroke-linejoin:round;" points="172.913,314.051 
+				<polygon style="fill:#C6FF00;stroke:#263238;strokeLinecap:round;stroke-linejoin:round;" points="172.913,314.051 
 					181.251,430.189 268.206,420.064 243.787,309.286 				"/>
-				<polygon style="fill:#C6FF00;stroke:#263238;stroke-linecap:round;stroke-linejoin:round;" points="172.913,314.051 
+				<polygon style="fill:#C6FF00;stroke:#263238;strokeLinecap:round;stroke-linejoin:round;" points="172.913,314.051 
 					160.406,424.233 181.251,430.189 				"/>
 			</g>
 			<polygon style="opacity:0.1;" points="181.251,430.189 172.756,315.435 160.406,424.233 			"/>
 		</g>
-		<path style="fill:none;stroke:#263238;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="M198.645,319.573
+		<path style="fill:none;stroke:#263238;strokeLinecap:round;stroke-linejoin:round;stroke-miterlimit:10;" d="M198.645,319.573
 			c0,0,6.631,20.272,20.347,21.088c13.716,0.817,11.806-23.398,11.806-23.398"/>
 		<path style="fill:#263238;" d="M200.445,319.573c0,0.994-0.806,1.8-1.799,1.8c-0.994,0-1.799-0.806-1.799-1.8
 			c0-0.994,0.806-1.799,1.799-1.799C199.639,317.774,200.445,318.579,200.445,319.573z"/>

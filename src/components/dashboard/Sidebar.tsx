@@ -182,6 +182,18 @@ const DashboardSidebar = () => {
                 </span>
               </div>
             </Link>
+            <Link href="/dashboard/news">
+              <div className="flex items-center cursor-pointer w-full mb-8">
+                <HelpCircle size={20} />
+                <span
+                  className={`pl-3 
+              text-[black]
+             md:block hidden`}
+                >
+                Manage News
+                </span>
+              </div>
+            </Link>
           </>
         )}
 

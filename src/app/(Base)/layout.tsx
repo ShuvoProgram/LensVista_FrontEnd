@@ -1,6 +1,7 @@
 import "../../app/globals.css";
 import type { Metadata } from "next";
 import BaseComponent from "@/components/base/BaseComponent";
+import '@smastrom/react-rating/style.css'
 export const metadata: Metadata = {
   title: "LensVista",
   description:

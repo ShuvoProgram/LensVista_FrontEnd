@@ -174,6 +174,7 @@ const page = ({ params }: any) => {
                 <Rating
                   style={{ maxWidth: 100 }}
                   value={parseInt(e?.rating)}
+                  readOnly={true}
                   // onChange={setRating}
                 />
               </div>

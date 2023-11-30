@@ -16,18 +16,21 @@ import {
   import { ToastAction } from "@/components/ui/toast";
   import Loader from "../../../../components/loader";
 import { useCreateNewsMutation } from "@/redux/feature/news/newsApi";
-import { contentType } from "@/constants/categories";
+import { contentTypes } from "@/constants/categories";
 
 function page() {
     const [image, setImage] = useState<any>([]);
-    const [title, setTitle] = useState("");
-    const [content, setContent] = useState("");
-    const [contentTypes, setContentTypes] = useState("");
     const [serviceData, setServiceData] = useState<any>({
         title: "",
         content: "",
         contentType: "",
       });
+
+      const {
+        title,
+        content,
+        contentType
+      } = serviceData;
 
       const handleImageChange = (e: any) => {
         e.preventDefault();
@@ -46,16 +49,13 @@ function page() {
         e.preventDefault();
     
         if (
-            title === "" ||
-          content === "" ||
-          contentTypes === ""
+          title === "" || content === "" || contentType === ""
         ) {
           // Show a toast message for validation error
           toast({
             title: "Please fill in all fields",
             variant: "destructive",
           });
-    
           return;
         }
     
@@ -65,29 +65,29 @@ function page() {
         });
         Form.append("title", title);
         Form.append("content", content);
-        Form.append("contentType", contentTypes);
-        // console.log(serviceData);
-        console.log(Form)
-        // const response = await createNews(Form);
-        // const { data: responseData, error } = response;
-        // if (responseData?.statusCode === 200) {
-        //   toast({
-        //     title: responseData?.message,
-        //   });
-        // } else {
-        //   toast({
-        //     variant: "destructive",
-        //     duration: 2500,
-        //     title: error?.data?.message,
-        //     action: (
-        //       <ToastAction
-        //         altText="Try again"
-        //       >
-        //         Try again
-        //       </ToastAction>
-        //     ),
-        //   });
-        // }
+        Form.append("contentType", contentType);
+        console.log(serviceData);
+       
+        const response = await createNews(Form);
+        const { data: responseData, error } = response;
+        if (responseData?.statusCode === 200) {
+          toast({
+            title: responseData?.message,
+          });
+        } else {
+          toast({
+            variant: "destructive",
+            duration: 2500,
+            title: error?.data?.message,
+            action: (
+              <ToastAction
+                altText="Try again"
+              >
+                Try again
+              </ToastAction>
+            ),
+          });
+        }
       };
 
   return (
@@ -111,8 +111,13 @@ function page() {
                   </Label>
                   <Input
                     value={title}
-                    onChange={(e: any) =>
-                      setTitle(e.target.value)
+                    onChange={(e) =>
+                      setServiceData((prev: any) => {
+                        return {
+                          ...prev,
+                          title: e.target.value,
+                        };
+                      })
                     }
                     placeholder="News Title"
                     type="text"
@@ -147,9 +152,14 @@ function page() {
                   </Label>
 
                   <Select
-                    value={contentTypes}
+                    value={contentType}
                     onValueChange={(e) =>
-                      setContentTypes(e)
+                      setServiceData((prev: any) => {
+                        return {
+                          ...prev,
+                          contentType: e,
+                        };
+                      })
                     }
                   >
                     <SelectTrigger className="w-full">
@@ -158,7 +168,7 @@ function page() {
                     <SelectContent>
                       <SelectGroup>
                         <SelectLabel placeholder="Select Content Type" />
-                        {contentType?.map((e) => (
+                        {contentTypes?.map((e) => (
                           <SelectItem
                             value={e}
                             key={e}
@@ -179,10 +189,16 @@ function page() {
               </Label>
               <Textarea
                 value={content}
-                  onChange={(e: any) =>
-                    setContent(e.target.value)
-                  }
+                onChange={(e) =>
+                  setServiceData((prev: any) => {
+                    return {
+                      ...prev,
+                      content: e.target.value,
+                    };
+                  })
+                }
                 placeholder="News Content"
+                name="contentType"
               />
             </div>
 

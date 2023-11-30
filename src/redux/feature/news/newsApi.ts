@@ -28,8 +28,8 @@ export const newsApi = api.injectEndpoints({
       invalidatesTags: ["news"],
     }),
     getNews: builder.query({
-      query: () => ({
-        url: `/news`,
+      query: (page: number) => ({
+        url: `/news?page=${page}`,
         method: "GET",
       }),
 

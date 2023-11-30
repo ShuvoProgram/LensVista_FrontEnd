@@ -8,7 +8,7 @@ export const categories = [
 ];
 
 
-export const contentType = [
+export const contentTypes = [
   "Fashion",
   "Travel",
   "Lifestyle",
