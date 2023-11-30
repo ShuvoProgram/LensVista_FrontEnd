@@ -72,7 +72,7 @@ const ServiceCard = ({ service }: any) => {
             </div>
 
             <div className="flex flex-col items-center justify-center text-sm">
-            {/* <Rate disabled defaultValue={averageRating} /> */}
+          
             <Rating value={averageRating} readOnly={true} style={{ maxWidth: 80 }}/>
               <span className="ml-1">( {totalReview} Reviews )</span>
             </div>

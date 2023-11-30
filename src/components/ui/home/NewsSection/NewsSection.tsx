@@ -2,6 +2,8 @@
 import { useGetNewsQuery } from "@/redux/feature/news/newsApi";
 import React from "react";
 import CategoryLoader from "./NewsLoader";
+import Link from "next/link";
+import Image from "next/image";
 
 const NewsSection = () => {
   const { data: news, isLoading } =
@@ -38,8 +40,10 @@ const NewsSection = () => {
                 data-te-ripple-init
                 data-te-ripple-color="light"
               >
-                <img
-                  src={data?.banner ? data?.banner : `https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg`}
+                <Image
+                width={400}
+                height={400}
+                src={data?.banner ? data?.banner : `https://mdbcdn.b-cdn.net/img/new/standard/city/018.jpg`}
                   className="w-full"
                   alt="Louvre"
                 />
@@ -49,14 +53,14 @@ const NewsSection = () => {
               </div>
             </div>
 
-            <div className="mb-6 mr-auto w-full shrink-0 grow-0 basis-auto px-3 md:mb-0 md:w-9/12 xl:w-7/12">
+            <Link href={`/news/${data?.id}`} className="mb-6 mr-auto w-full shrink-0 grow-0 basis-auto px-3 md:mb-0 md:w-9/12 xl:w-7/12">
               <h5 className="mb-3 text-lg font-bold">
                 {data?.title}
               </h5>
               <p className="text-neutral-500 dark:text-neutral-300">
-               {data?.content}
+              {data?.content?.slice(0, 200)} . . .
               </p>
-            </div>
+            </Link>
           </div>
                 ))
               }
