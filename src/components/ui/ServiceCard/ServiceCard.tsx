@@ -95,7 +95,7 @@ const ServiceCard = ({ service }: any) => {
                   ${price}
                 </p>
                 <Button
-                  className="bg-sky-500 text-white"
+                  className="bg-blue-400 text-white"
                   variant={"default"}
                   onClick={() => handleAddToCart(service)}
                 >

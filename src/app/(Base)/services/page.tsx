@@ -71,7 +71,7 @@ const page = () => {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
     <div>
-      <div className="w-[95%] mx-auto">
+      <div className="w-[95%] mx-auto my-10">
         <div className="grid grid-cols-12 gap-5">
           <div className="col-span-12 md:col-span-3">
             <Sheet>

@@ -24,7 +24,7 @@ export default function RootLayout({
   React.useEffect(() => {
     if (isLoading === false) {
       if (user === null && !token) {
-        router.push("/auth/login?redirectTo=/dashboard");
+        router.push("/auth/registration?redirectTo=/dashboard");
       }
     }
   }, [user, isLoading]);

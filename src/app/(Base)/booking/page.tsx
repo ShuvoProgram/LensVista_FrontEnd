@@ -201,7 +201,7 @@ const page = () => {
             </div>
 
             <div className="flex items-center justify-center ">
-              <Button className="mt-8   bg-gradient-to-r from-[#13a0ef] to-[#e1eef1]  px-3 py-3 text-sm font-bold text-white transition hover:translate-y-1">
+              <Button className="mt-8 bg-blue-400 px-3 py-3 text-sm font-bold text-white transition hover:translate-y-1">
                 Book Now
               </Button>
             </div>

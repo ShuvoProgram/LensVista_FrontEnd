@@ -45,90 +45,60 @@ const page = ({ params }: any) => {
 
   return (
     <div>
-      <div className="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-10">
-        <div className="mx-auto sm:text-center lg:max-w-2xl">
-          <div className="max-w-xl mb-10 md:mx-auto sm:text-center lg:max-w-2xl md:mb-12">
-            <div>
-              <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-white uppercase rounded-full bg-primary">
-                Detail
-              </p>
-            </div>
-            <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-gray-900 sm:text-4xl md:mx-auto">
-              <span className="relative inline-block">
-                <svg
-                  viewBox="0 0 52 24"
-                  fill="currentColor"
-                  className="absolute top-0 left-0 z-0 hidden w-32 -mt-8 -ml-20 text-blue-gray-100 lg:w-32 lg:-ml-28 lg:-mt-10 sm:block"
-                >
-                  <defs>
-                    <pattern
-                      id="5dc90b42-5ed4-45a6-8e63-2d78ca9d3d95"
-                      x="0"
-                      y="0"
-                      width=".135"
-                      height=".30"
-                    >
-                      <circle
-                        cx="1"
-                        cy="1"
-                        r=".7"
-                      />
-                    </pattern>
-                  </defs>
-                  <rect
-                    fill="url(#5dc90b42-5ed4-45a6-8e63-2d78ca9d3d95)"
-                    width="52"
-                    height="24"
-                  />
-                </svg>
-                <span className="relative"></span>
-              </span>{" "}
-              {title}
-            </h2>
-          </div>
-          <div className="mb-4 transition-shadow duration-300 hover:shadow-xl ">
-            <img
-              className="object-cover w-full h-56 rounded shadow-lg sm:h-64 md:h-80 lg:h-96"
-              src={banner}
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-      <section className="text-gray-600 body-font">
-        <div className="container px-5 mx-auto flex flex-col">
-          <div className="w-[95%] mx-auto">
-            <div className="flex flex-col justify-center sm:flex-row mt-10">
-              <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
-                <p className="leading-relaxed text-lg mb-4 inline-flex justify-center sm:justify-start">
-                  {description}
-                </p>
-                <div className="flex items-center justify-between">
-                  <p className="text-black inline-flex items-center text-lg font-bold">
-                    Price: ${price}
-                  </p>
-                  <div className="">
-                    {
-                      availability ? (
-                    <Link href={`/booking?productId=${id}`}>
-                      <Button>Book</Button>
-                    </Link>
-                      )
-                      : 
-                      (
-                        <Button>Booked</Button>
-                      )
-                    }
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+<div className="md:flex items-start justify-center py-12 2xl:px-20 md:px-6 px-4">
 
+  <div className="xl:w-2/6 lg:w-2/5 w-80 md:block hidden">
+    <img className="w-full" alt="image of a girl posing" src={banner} />
+  </div>
+  <div className="md:hidden">
+    <img className="w-full" alt="image of a girl posing" src={banner} />
+  </div>
+  <div className="xl:w-2/5 md:w-1/2 lg:ml-8 md:ml-6 md:mt-0 mt-6">
+    <div className="border-b border-gray-200 pb-6">
+      <h1 className="lg:text-2xl text-xl font-semibold lg:leading-6 leading-7 text-gray-800 dark:text-white mt-2">{title}</h1>
+    </div>
+    <div className="py-4 border-b border-gray-200 flex items-center justify-between">
+      <p className="text-base leading-4 text-gray-800 dark:text-gray-300">availability</p>
+      <div className="flex items-center justify-center">
+        {
+          availability === true ? (
+            <p className="text-sm leading-none text-green-600 dark:text-gray-300">Yes</p>
+            ) : (
+            <p className="text-sm leading-none text-red-600 dark:text-gray-300">No</p>
+          )
+        }
+      </div>
+    </div>
+    <div className="py-4 border-b border-gray-200 flex items-center justify-between">
+      <p className="text-base leading-4 text-gray-800 dark:text-gray-300">Price</p>
+      <div className="flex items-center justify-center">
+        <p className="text-sm leading-none text-gray-600 dark:text-gray-300 mr-3">$ {price}</p>
+        <svg className="text-gray-300 dark:text-white cursor-pointer" width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 1L5 5L1 9" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+    <Link href={`/booking?productId=${id}`}>
+    <button className="bg-blue-400 hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 text-base flex items-center justify-center leading-none text-white w-full py-4">
+      <svg className="mr-3 text-white dark:text-gray-900" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M7.02301 7.18999C7.48929 6.72386 7.80685 6.12992 7.93555 5.48329C8.06425 4.83666 7.9983 4.16638 7.74604 3.55724C7.49377 2.94809 7.06653 2.42744 6.51835 2.06112C5.97016 1.6948 5.32566 1.49928 4.66634 1.49928C4.00703 1.49928 3.36252 1.6948 2.81434 2.06112C2.26615 2.42744 1.83891 2.94809 1.58665 3.55724C1.33439 4.16638 1.26843 4.83666 1.39713 5.48329C1.52583 6.12992 1.8434 6.72386 2.30968 7.18999L4.66634 9.54749L7.02301 7.18999Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M4.66699 4.83333V4.84166" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M13.69 13.8567C14.1563 13.3905 14.4738 12.7966 14.6025 12.15C14.7312 11.5033 14.6653 10.8331 14.413 10.2239C14.1608 9.61476 13.7335 9.09411 13.1853 8.72779C12.6372 8.36148 11.9926 8.16595 11.3333 8.16595C10.674 8.16595 10.0295 8.36148 9.48133 8.72779C8.93314 9.09411 8.5059 9.61476 8.25364 10.2239C8.00138 10.8331 7.93543 11.5033 8.06412 12.15C8.19282 12.7966 8.51039 13.3905 8.97667 13.8567L11.3333 16.2142L13.69 13.8567Z" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+        <path d="M11.333 11.5V11.5083" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round" />
+      </svg>
+      Booking Now
+    </button>
+    </Link>
+    <div>
+      <p className="xl:pr-48 text-base lg:leading-tight leading-normal text-gray-600 dark:text-gray-300 mt-7">{description}</p>
+    </div>
+    <div>
+      
+    </div>
+  </div>
+</div>
       <div>
-        <p className="px-3 py-px mb-4 font-semibold tracking-wider text-white uppercase rounded-full bg-primary text-center text-xl">
+        <p className="px-3 py-px my-4 font-semibold tracking-wider uppercase rounded-full text-center text-xl">
           All Reviews
         </p>
 

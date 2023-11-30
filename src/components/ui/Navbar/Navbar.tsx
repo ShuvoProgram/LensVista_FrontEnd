@@ -365,7 +365,7 @@ export default () => {
               <>
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <Avatar className="cursor-pointer border-[#97ce00] border-2 ">
+                    <Avatar className="cursor-pointer border-blue-400 border-2 ">
                       <AvatarImage
                         height={30}
                         width={30}
