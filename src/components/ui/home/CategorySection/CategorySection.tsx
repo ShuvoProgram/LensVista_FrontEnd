@@ -1,6 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { categories as options } from "@/constants/categories";
+import Link from "next/link";
 
 const CategorySection = () => {
+  // const [category, setCategory] = useState("")
+
+  // useEffect(() => {
+  //   const apiUrl = `${process.env.NEXT_PUBLIC_BACKEND_API}/service?`
+  // }, [])
   return (
     <div className="mx-auto py-5 px-4 w-full max-w-md sm:max-w-2xl lg:max-w-7xl">
     <div className="grid lg:grid-rows-2 grid-cols-2 lg:grid-cols-5 lg:grid-flow-col gap-5">
@@ -12,7 +19,7 @@ const CategorySection = () => {
 
       {/* :CATEGORY 1 -> LARGEST, LEFT */}
       <div className="order-1 lg:row-span-2 col-span-2 relative shadow rounded-md overflow-hidden bg-pink-100 filter hover:shadow-lg hover:brightness-125">
-        <a href="#link" className="pt-8 pb-20 px-5 block w-full h-full">
+        <Link href={`services`} className="pt-8 pb-20 px-5 block w-full h-full">
           {/* ::Background Picture */}
           <div>
             {/* :::picture */}
@@ -27,14 +34,14 @@ const CategorySection = () => {
               <span className="block">Wedding Photography</span>
             </h3>
           </div>
-        </a>
+        </Link>
       </div>
 
 
 
       {/* :CATEGORY 2 -> SMALL, CENTER LEFT */}
       <div className="order-2 lg:row-span-1 col-span-full sm:col-span-1 relative shadow rounded-md overflow-hidden bg-gray-800 filter hover:shadow-lg hover:brightness-125">
-        <a href="#link" className="py-5 px-5 block w-full h-full">
+        <Link href={`services`} className="py-5 px-5 block w-full h-full">
           {/* ::Background Picture */}
           <div>
             {/* :::picture */}
@@ -47,12 +54,12 @@ const CategorySection = () => {
             {/* :::name */}
             <h3 className="text-2xl font-playfair tracking-wide leading-relaxed antialiased">Sports Photography</h3>
           </div>
-        </a>
+        </Link>
       </div>
 
       {/* :CATEGORY 3 -> LARGE, CENTER BOTTOM*/}
       <div className="order-4 lg:order-3 lg:row-span-1 col-span-full sm:col-span-1 lg:col-span-2 relative shadow rounded-md overflow-hidden bg-pink-400 filter hover:shadow-lg hover:brightness-125">
-        <a href="#link" className="py-5 px-5 block w-full h-full">
+        <Link href={`services`} className="py-5 px-5 block w-full h-full">
           {/* ::Background Picture */}
           <div>
             {/* :::picture */}
@@ -65,14 +72,14 @@ const CategorySection = () => {
             {/* :::name */}
             <h3 className="mt-16 text-2xl font-playfair tracking-wide leading-relaxed antialiased">Food Photography</h3>
           </div>
-        </a>
+        </Link>
       </div>
 
 
 
       {/* :CATEGORY 4 -> SMALL, CENTER RIGHT */}
       <div className="order-3 lg:order-4 lg:row-span-1 col-span-full sm:col-span-1 relative shadow rounded-md overflow-hidden bg-gray-500 filter hover:shadow-lg hover:brightness-125">
-        <a href="#link" className="py-5 px-5 block w-full h-full">
+        <Link href={`services`} className="py-5 px-5 block w-full h-full">
           {/* ::Background Picture */}
           <div>
             {/* :::picture */}
@@ -85,12 +92,12 @@ const CategorySection = () => {
             {/* :::name */}
             <h3 className="text-2xl font-playfair tracking-wide leading-relaxed antialiased">Event Photography</h3>
           </div>
-        </a>
+        </Link>
       </div>
       
       {/* :CATEGORY 5 -> TALL, RIGHT */}
       <div className="order-5 lg:row-span-2 col-span-full sm:col-span-1 relative shadow rounded-md overflow-hidden bg-blue-800 filter hover:shadow-lg hover:brightness-125">
-        <a href="#link" className="py-5 px-5 block w-full h-full">
+        <Link href={`services`} className="py-5 px-5 block w-full h-full">
           {/* ::Background Picture */}
           <div>
             {/* :::picture */}
@@ -108,7 +115,7 @@ const CategorySection = () => {
               <span className="block">Photography</span>
             </h3>
           </div>
-        </a>
+        </Link>
       </div>
 
     </div>

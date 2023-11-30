@@ -75,7 +75,7 @@ const page = () => {
     Form.append("category", category);
     Form.append("availability", availability);
     Form.append("description", description);
-
+console.log(Form)
     const response = await createProduct(Form);
     const { data: responseData, error } = response;
     if (responseData?.statusCode === 200) {

@@ -47,9 +47,9 @@ function page() {
 
       const handleCreateNews = async (e: any) => {
         e.preventDefault();
-    
+
         if (
-          title === "" || content === "" || contentType === ""
+          !title || !content || !contentType
         ) {
           // Show a toast message for validation error
           toast({
@@ -66,7 +66,7 @@ function page() {
         Form.append("title", title);
         Form.append("content", content);
         Form.append("contentType", contentType);
-       
+       console.log(serviceData);
         const response = await createNews(Form);
         const { data: responseData, error } = response;
         if (responseData?.statusCode === 200) {

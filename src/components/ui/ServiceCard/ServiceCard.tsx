@@ -17,6 +17,7 @@ const ServiceCard = ({ service }: any) => {
     title,
     createdAt,
     description,
+    isBooked,
     price,
     category,
     availability,
