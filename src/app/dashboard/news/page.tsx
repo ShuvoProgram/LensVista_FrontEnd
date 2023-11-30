@@ -145,7 +145,7 @@ const handleDelete = async (newsId: any) => {
     }
   });
 };
-console.log(news)
+
   return (
    <div>
       <div className="flex items-center justify-end my-2 space-y-2 text-xs sm:space-y-0 sm:space-x-3 ">

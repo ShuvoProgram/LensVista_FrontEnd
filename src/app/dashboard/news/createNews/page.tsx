@@ -66,7 +66,6 @@ function page() {
         Form.append("title", title);
         Form.append("content", content);
         Form.append("contentType", contentType);
-        console.log(serviceData);
        
         const response = await createNews(Form);
         const { data: responseData, error } = response;

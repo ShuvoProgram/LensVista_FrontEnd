@@ -15,6 +15,7 @@ import { removeFromCart } from "@/redux/feature/cart/cart";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Calendar } from "@/components/ui/calendar";
+import { useGetServiceQuery } from "@/redux/feature/service/serviceApi";
 
 const page = () => {
   const [date, setDate] = React.useState<Date | undefined>(
@@ -35,7 +36,7 @@ const page = () => {
     (state) => state.cart
   );
 
-  const [createBooking, { isLoading }] =
+  const [createBooking] =
     useCreateBookingMutation();
 
   useEffect(() => {
@@ -46,6 +47,7 @@ const page = () => {
       setBookingItem(bookingService);
     }
   }, [productId, cartItems]);
+
 
   const handleBookingSubmit = async (e: any) => {
     e.preventDefault();
@@ -115,10 +117,10 @@ const page = () => {
             photographer
           </p>
           <img
-            className="absolute top-0 left-0 -z-10 h-full w-full object-cover"
-            src="https://i0.wp.com/hdev.co.nz/wp-content/uploads/2014/10/wedding-395.jpg?ssl=1"
-            alt=""
-          />
+               className="absolute top-0 left-0 -z-10 h-full w-full object-cover"
+               src="https://i0.wp.com/hdev.co.nz/wp-content/uploads/2014/10/wedding-395.jpg?ssl=1"
+               alt=""
+             />
         </div>
 
         <div className="mx-auto grid max-w-screen-lg px-6 pb-20">
@@ -199,7 +201,7 @@ const page = () => {
             </div>
 
             <div className="flex items-center justify-center ">
-              <Button className="mt-8   bg-gradient-to-r from-[#13a0ef] to-[#97ce00]  px-3 py-3 text-sm font-bold text-white transition hover:translate-y-1">
+              <Button className="mt-8   bg-gradient-to-r from-[#13a0ef] to-[#e1eef1]  px-3 py-3 text-sm font-bold text-white transition hover:translate-y-1">
                 Book Now
               </Button>
             </div>

@@ -82,7 +82,7 @@ const emailForgotPWRef = useRef<HTMLInputElement>(null);
       email,
       password,
     };
-console.log(data);
+
     const result: any = await registerUser(data);
     const { data: responseData, error } = result;
     if (responseData?.statusCode === 200) {
