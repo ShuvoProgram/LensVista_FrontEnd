@@ -21,18 +21,10 @@ LensVista skillfully captures moments! 📸 We specialize in providing expert ph
 
 ## Features
 
-| Feature                                 | Description                                          |
+| Role                | Credential
 |-----------------------------------------|------------------------------------------------------|
-| User Registration                       | Allows users to register with their details           |
-| User Login                              | Provides authentication through email and password   |
-| Get All Users (Admin/Super Admin Only)   | Retrieves a list of all users                         |
-| Get Current User Details                | Fetches details of the currently logged-in user       |
-| Update User Profile Picture             | Allows users to update their profile picture          |
-| Get All Admins (Super Admin Only)        | Retrieves a list of all administrators               |
-| Update User Role (Super Admin Only)      | Modifies the role of a user                           |
-| Update User Details (Admin/Super Admin)  | Edits user information                                |
-| Update User Profile Data                | Updates user profile data (name, email, etc.)         |
-| Delete User (Admin/Super Admin Only)     | Removes a user from the system                        |
+| Super Admin         | Email: super-admin@gmail.com password: ********
+
 
 
 ## Screenshots
