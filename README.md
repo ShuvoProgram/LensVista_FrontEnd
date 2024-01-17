@@ -1,15 +1,15 @@
 
-![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
+![Logo](https://i.ibb.co/tpx8wRt/Screenshot-2023-11-28-010559-modified-removebg-preview.png)
 
 
-# Project Title
+# Lens Vista
 
-A brief description of what this project does and who it's for
+LensVista skillfully captures moments! 📸 We specialize in providing expert photography services for events, portraits, and special occasions. 🌟 Allow us to elegantly frame your cherished memories. #PreserveMoments
 
 
 ## Demo
 
-Insert gif or link to demo
+![Project Screenshot](./github/images/LensVista.png)
 
 
 ## Deployment
@@ -23,5 +23,5 @@ To deploy this project run
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](./github/images/screencapture-lens-vista-vercel-app-2024-01-16-22_47_41.png)
 
