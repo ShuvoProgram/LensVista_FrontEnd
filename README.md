@@ -24,10 +24,9 @@ LensVista skillfully captures moments! 📸 We specialize in providing expert ph
 </summary>
 
 - [Role based](#role_based)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Project Features](#project_features)
+- [Tech Stack](#tech_stack)
+- [Authors](#authors)
 
 </details>
 
