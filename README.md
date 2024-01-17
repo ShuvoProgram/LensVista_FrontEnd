@@ -52,10 +52,16 @@ LensVista skillfully captures moments! 📸 We specialize in providing expert ph
 
 ## Tech Stack
 
-**Client:** [![Next JS](https://skillicons.dev/icons?i=next "Next JS")](https://nextjs.org/ "Next JS")
+**Frontend:**
+[![Next JS](https://skillicons.dev/icons?i=next "Next JS")](https://nextjs.org/ "Next JS") [![TypeScript](https://skillicons.dev/icons?i=typescript "TypeScript")](https://www.typescriptlang.org/ "TypeScript") [![Redux](https://skillicons.dev/icons?i=redux "Redux")](https://redux.js.org/ "Redux") [![Shadcn UI](https://skillicons.dev/icons?i=shadcn-ui "Shadcn UI")](https://shadcn-ui.com/ "Shadcn UI") [![Tailwind CSS](https://skillicons.dev/icons?i=tailwindcss "Tailwind CSS")](https://tailwindcss.com/ "Tailwind CSS")
 
-**Server:** [![Prisma](https://skillicons.dev/icons?i=prisma "Prisma")](https://prisma.io/ "Prisma")
+**Backend:**
+[![Express JS](https://skillicons.dev/icons?i=express "Express JS")](https://expressjs.com/ "Express JS") 
+[![Prisma](https://skillicons.dev/icons?i=prisma "Prisma")](https://prisma.io/ "Prisma")
+[![JWT](https://skillicons.dev/icons?i=jwt "JWT")](https://jwt.io/ "JWT")
 
 ## Authors
 
 - [@ShuvoProgramer](https://github.com/ShuvoProgram)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
