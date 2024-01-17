@@ -31,14 +31,14 @@ LensVista skillfully captures moments! 📸 We specialize in providing expert ph
 </details>
 
 
-# Role based
+# Role_based
 
 | Role                | Credential
 |-----------------------------------------|------------------------------------------------------|
 | Admin               | Email: admin@gmail.com password: ********
 | User                | Email: user@gmail.com password: 123456
 
-# Project Features
+# Project_Features
 
 ## User Management
 
@@ -73,7 +73,7 @@ LensVista skillfully captures moments! 📸 We specialize in providing expert ph
 
 
 
-# Tech Stack
+# Tech_Stack
 
 **Frontend:**
 [![Next JS](https://skillicons.dev/icons?i=next "Next JS")](https://nextjs.org/ "Next JS") [![TypeScript](https://skillicons.dev/icons?i=typescript "TypeScript")](https://www.typescriptlang.org/ "TypeScript") [![Redux](https://skillicons.dev/icons?i=redux "Redux")](https://redux.js.org/ "Redux") [![Shadcn UI](https://skillicons.dev/icons?i=shadcn-ui "Shadcn UI")](https://shadcn-ui.com/ "Shadcn UI") [![Tailwind CSS](https://skillicons.dev/icons?i=tailwindcss "Tailwind CSS")](https://tailwindcss.com/ "Tailwind CSS")
