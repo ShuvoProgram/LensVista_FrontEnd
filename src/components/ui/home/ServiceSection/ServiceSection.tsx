@@ -6,7 +6,7 @@ import ServiceCard from "../../ServiceCard/ServiceCard";
 
 const ServiceSection = () => {
   const { data, isLoading } = useGetServiceQuery(1);
-
+console.log(data);
   return (
     <section className="py-14">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
