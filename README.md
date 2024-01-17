@@ -10,7 +10,7 @@
 
 LensVista skillfully captures moments! 📸 We specialize in providing expert photography services for events, portraits, and special occasions. 🌟 Allow us to elegantly frame your cherished memories. #PreserveMoments
 
-## Demo
+# Demo
 
 ![Project Screenshot](./github/images/LensVista.png)
 
@@ -32,25 +32,49 @@ LensVista skillfully captures moments! 📸 We specialize in providing expert ph
 </details>
 
 
-## Role based
+# Role based
 
 | Role                | Credential
 |-----------------------------------------|------------------------------------------------------|
 | Admin               | Email: admin@gmail.com password: ********
 | User                | Email: user@gmail.com password: 123456
 
-## Features
+# Project Features
 
-- Light/dark mode toggle
-- Live previews
-- Fullscreen mode
-- Cross platform
+## User Management
 
-## Screenshots
+- **User Authentication:** Secure user authentication for creating accounts and logging in.
 
-![App Screenshot](./github/images/screencapture-lens-vista-vercel-app-2024-01-16-22_47_41.png)
+- **User Profile Management:** Users can easily manage their profiles, including personal information and preferences.
 
-## Tech Stack
+## Event Booking
+
+- **Event Booking System:** Users can book events seamlessly, providing a convenient way to participate in various activities.
+
+- **Booking Tracking:** Users have the ability to track and manage their booked events in one central location.
+
+- **Event Reviews:** Users can leave reviews for events they attended, contributing to a feedback system.
+
+## Admin Panel
+
+- **Admin Profile Management:** Admins have control over their profiles, ensuring accurate and up-to-date information.
+
+- **Event Management:**
+  - Create New Event: Admins can add new events to the system.
+  - Update Existing Event: Modify details of existing events.
+  - Delete Event: Remove outdated or canceled events from the platform.
+
+- **Customer Booking Management:**
+  - Accept Bookings: Admins can approve customer bookings.
+  - Cancel Bookings: Admins have the ability to cancel bookings as necessary.
+
+- **News and FAQ Management:**
+  - News Updates: Admins can post and manage news updates.
+  - FAQ Management: Admins can add, edit, or remove frequently asked questions.
+
+
+
+# Tech Stack
 
 **Frontend:**
 [![Next JS](https://skillicons.dev/icons?i=next "Next JS")](https://nextjs.org/ "Next JS") [![TypeScript](https://skillicons.dev/icons?i=typescript "TypeScript")](https://www.typescriptlang.org/ "TypeScript") [![Redux](https://skillicons.dev/icons?i=redux "Redux")](https://redux.js.org/ "Redux") [![Shadcn UI](https://skillicons.dev/icons?i=shadcn-ui "Shadcn UI")](https://shadcn-ui.com/ "Shadcn UI") [![Tailwind CSS](https://skillicons.dev/icons?i=tailwindcss "Tailwind CSS")](https://tailwindcss.com/ "Tailwind CSS")
@@ -60,7 +84,7 @@ LensVista skillfully captures moments! 📸 We specialize in providing expert ph
 [![Prisma](https://skillicons.dev/icons?i=prisma "Prisma")](https://prisma.io/ "Prisma")
 [![JWT](https://skillicons.dev/icons?i=jwt "JWT")](https://jwt.io/ "JWT")
 
-## Authors
+# Authors
 
 - [@ShuvoProgramer](https://github.com/ShuvoProgram)
 
