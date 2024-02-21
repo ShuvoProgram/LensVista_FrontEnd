@@ -6,7 +6,7 @@ import ServiceCard from "../../ServiceCard/ServiceCard";
 
 const ServiceSection = () => {
   const { data, isLoading } = useGetServiceQuery(1);
-
+console.log(data);
   return (
     <section className="py-14">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
@@ -33,8 +33,8 @@ const ServiceSection = () => {
             <div className="grid grid-cols-12 gap-5">
               {isLoading ? (
                 <>
-                  {[1, 2, 3, 4, 5, 6]?.map((service, i) => (
-                    <div className="col-span-12 md:col-span-4">
+                  {[1, 2, 3, 4, 5, 6, 7, 8]?.map((service, i) => (
+                    <div className="col-span-12 md:col-span-3">
                       <LoaderCard key={i} />
                     </div>
                   ))}
@@ -43,7 +43,7 @@ const ServiceSection = () => {
                 <>
                   {data?.data?.map(
                     (service: any, i: any) => (
-                      <div className="col-span-12 md:col-span-4">
+                      <div className="col-span-12 md:col-span-3">
                         <ServiceCard
                           key={i + 1}
                           service={service}

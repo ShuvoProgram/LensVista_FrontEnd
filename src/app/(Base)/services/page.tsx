@@ -1,7 +1,7 @@
 "use client";
 import ServiceCard from "@/components/ui/ServiceCard/ServiceCard";
 import React, { useEffect, useState } from "react";
-import { category as options } from "@/constants/categories";
+import { categories as options } from "@/constants/categories";
 import { Filter } from "lucide-react";
 import {
   Sheet,
@@ -71,7 +71,7 @@ const page = () => {
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
   return (
     <div>
-      <div className="w-[95%] mx-auto">
+      <div className="w-[95%] mx-auto my-10">
         <div className="grid grid-cols-12 gap-5">
           <div className="col-span-12 md:col-span-3">
             <Sheet>

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Filter } from "lucide-react";
-import { category as options } from "@/constants/categories";
+import { categories as options } from "@/constants/categories";
 
 const FilterSection = ({
   searchQuery,

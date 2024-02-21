@@ -70,22 +70,13 @@ const page = () => {
     image.forEach((image: any) => {
       Form.append("banner", image);
     });
-    // Form.append("title", title);
-    // Form.append("price", price);
-    // Form.append("category", category);
-    // Form.append("availability", availability);
-    // Form.append("description", description);
-    console.log(Form)
-    const data = {
-     title,
-       price,
-      category,
-      availability,
-       description
-    }
-    
-    console.log(data)
-    const response = await createProduct(data);
+    Form.append("title", title);
+    Form.append("price", price);
+    Form.append("category", category);
+    Form.append("availability", availability);
+    Form.append("description", description);
+console.log(Form)
+    const response = await createProduct(Form);
     const { data: responseData, error } = response;
     if (responseData?.statusCode === 200) {
       toast({

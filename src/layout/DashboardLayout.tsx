@@ -1,7 +1,6 @@
 "use client";
 import DashboardSidebar from "@/components/dashboard/Sidebar";
 import { useAppSelector } from "@/redux/hooks";
-import { Sidebar } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React from "react";
 
@@ -15,7 +14,7 @@ const DashboardLayout = ({ children }: any) => {
   React.useEffect(() => {
     if (isLoading === false) {
       if (user === null && !token) {
-        router.push("/auth/login?redirectTo=/dashboard");
+        router.push("/auth/registration?redirectTo=/dashboard");
       }
     }
   }, [user, isLoading]);

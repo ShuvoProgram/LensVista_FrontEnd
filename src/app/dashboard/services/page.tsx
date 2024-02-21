@@ -236,7 +236,7 @@ const page = () => {
         <TableHeader>
           <TableRow>
             <TableHead className="">Service Name</TableHead>
-            {/* <TableHead>Price</TableHead> */}
+          
             <TableHead>Amount</TableHead>
             <TableHead>Availability </TableHead>
             <TableHead className="text-right">

@@ -55,8 +55,7 @@ const Testimonials = () => {
           <div className="w-full max-w-6xl mx-auto">
             <div className="text-center max-w-2xl mx-auto">
               <h1 className="text-6xl md:text-5xl font-bold mb-5  text-transparent my-5 p-3 bg-clip-text bg-gradient-to-r from-[#13a0ef] to-[#e1eef1] via-[#13a0ef]">
-                What people <br />
-                are saying.
+               Client Reviews
               </h1>
               <div className="text-center mb-10">
                 <span className="inline-block w-1 h-1 rounded-full bg-indigo-500 ml-1"></span>
@@ -77,13 +76,13 @@ const Testimonials = () => {
             </svg>
             <blockquote className="relative">
                 <p className="text-lg tracking-tight text-slate-900">
-                    Awesome idea. Cant wait to see how this turns out!
+                Exceptional photography service! Stunning shots captured beautifully.
                 </p>
             </blockquote>
             <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
                 <div>
-                    <div className="font-display text-base text-slate-900">Exmaple name</div>
-                    <div className="mt-1 text-sm text-slate-500">Job designation</div>
+                    <div className="font-display text-base text-slate-900">John Doe</div>
+                    <div className="mt-1 text-sm text-slate-500">Customer</div>
                 </div>
                 <div className="overflow-hidden rounded-full bg-slate-50">
                     <img alt="" src="https://i.pravatar.cc/300" className="h-14 w-14 object-cover" loading="lazy" width="56" height="56" />
@@ -100,13 +99,13 @@ const Testimonials = () => {
             </svg>
             <blockquote className="relative">
                 <p className="text-lg tracking-tight text-slate-900">
-                    Awesome idea. Cant wait to see how this turns out!
+                Highly recommend this photography service.
                 </p>
             </blockquote>
             <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
                 <div>
-                    <div className="font-display text-base text-slate-900">Exmaple name</div>
-                    <div className="mt-1 text-sm text-slate-500">Job designation</div>
+                    <div className="font-display text-base text-slate-900">Rahman</div>
+                    <div className="mt-1 text-sm text-slate-500">Customer</div>
                 </div>
                 <div className="overflow-hidden rounded-full bg-slate-50">
                     <img alt="" src="https://i.pravatar.cc/300" className="h-14 w-14 object-cover" loading="lazy" width="56" height="56" />
@@ -123,13 +122,13 @@ const Testimonials = () => {
             </svg>
             <blockquote className="relative">
                 <p className="text-lg tracking-tight text-slate-900">
-                    Awesome idea. Cant wait to see how this turns out!
+                Absolutely thrilled with the photography service.
                 </p>
             </blockquote>
             <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
                 <div>
-                    <div className="font-display text-base text-slate-900">Exmaple name</div>
-                    <div className="mt-1 text-sm text-slate-500">Job designation</div>
+                    <div className="font-display text-base text-slate-900">Kamal</div>
+                    <div className="mt-1 text-sm text-slate-500">Customer</div>
                 </div>
                 <div className="overflow-hidden rounded-full bg-slate-50">
                     <img alt="" src="https://i.pravatar.cc/300" className="h-14 w-14 object-cover" loading="lazy" width="56" height="56" />
@@ -146,13 +145,13 @@ const Testimonials = () => {
             </svg>
             <blockquote className="relative">
                 <p className="text-lg tracking-tight text-slate-900">
-                    Awesome idea. Cant wait to see how this turns out!
+                Top-notch photography service. Incredible attention to detail.
                 </p>
             </blockquote>
             <figcaption className="relative mt-6 flex items-center justify-between border-t border-slate-100 pt-6">
                 <div>
-                    <div className="font-display text-base text-slate-900">Exmaple name</div>
-                    <div className="mt-1 text-sm text-slate-500">Job designation</div>
+                    <div className="font-display text-base text-slate-900">Critiana</div>
+                    <div className="mt-1 text-sm text-slate-500">Customer</div>
                 </div>
                 <div className="overflow-hidden rounded-full bg-slate-50">
                     <img alt="" src="https://i.pravatar.cc/300" className="h-14 w-14 object-cover" loading="lazy" width="56" height="56" />

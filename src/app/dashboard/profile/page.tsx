@@ -157,7 +157,7 @@ const page = () => {
                         : userProfileData?.profileImage
                     }
                     // src={`${currentUser?.profilePicture || ''}`}
-                    className="w-32 h-32 rounded-full object-cover border-[3px] border-[#97ce00]"
+                    className="w-32 h-32 rounded-full object-cover border-[3px] border-blue-400"
                     alt="profilePicture"
                     height={500}
                     width={500}
